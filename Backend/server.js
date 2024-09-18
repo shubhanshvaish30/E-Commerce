@@ -16,10 +16,22 @@ const app=express()
 
 
 
+const allowedOrigins = [
+    'https://e-commerce-frontend-dker.onrender.com',
+    'https://e-commerce-admin-akx2.onrender.com'
+];
 const corsOptions = {
-    origin: 'https://e-commerce-frontend-dker.onrender.com',
+    origin: function (origin, callback) {
+        // Allow requests from the allowed origins list
+        if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
+            callback(null, true);
+        } else {
+            callback(new Error('Not allowed by CORS'));
+        }
+    },
     credentials: true,
-  };
+};
+
 // middleware
 app.use(express.json())
 app.use(cors(corsOptions));   // we can access the backend from frontend
