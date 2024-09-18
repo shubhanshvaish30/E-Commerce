@@ -2,8 +2,11 @@ import React, { useEffect, useState } from "react";
 import './Show.css'
 import axios from 'axios'
 import { toast } from "react-toastify";
+import { useSelector } from "react-redux";
+
 
 function Show({url}){
+    const {token}=useSelector(store=>store.auth)
     const [list,setList]=useState([])
     const fetchList=async ()=>{
         const response=await axios.get(`${url}/products`)
@@ -16,7 +19,11 @@ function Show({url}){
         }
     }
     const removeProd=async (prodId)=>{
-        const response=await axios.post(`${url}/products/delete`,{id:prodId})
+        const response=await axios.post(`${url}/delete`,{id:prodId},{
+                headers: {
+                    Authorization: `Bearer ${token}`,
+                },
+            })
         await fetchList();
         if(response.data.success){
             toast.success(response.data.message)
