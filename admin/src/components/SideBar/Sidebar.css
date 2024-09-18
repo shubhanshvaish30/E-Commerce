@@ -1,0 +1,44 @@
+.sidebar {
+    position: fixed;
+    top: 71px; /* Offset from the top to account for the navbar height */
+    left: 0;
+    width: 18%;
+    min-height: calc(100vh - 50px); /* Adjust height to exclude navbar height */
+    border-right: 1.5px solid #a9a9a9;
+    background-color: white;
+    padding-top: 20px; /* Space for content within sidebar */
+    overflow-y: auto; /* Allows scrolling inside the sidebar if content overflows */
+    z-index: 1000; /* Ensures sidebar is above other content */
+  }
+  
+  /* Sidebar options */
+  .sidebar-options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 20px;
+  }
+  
+  .sidebar-option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid #a9a9a9;
+    border-right: 0;
+    padding: 8px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .sidebar-option.active {
+    background-color: #cdcdcd;
+    border-color: black;
+  }
+
+    @media (max-width: 900px) {
+        .sidebar-option p {
+            display: none;
+        }
+    }

@@ -1,0 +1,141 @@
+.cart-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .cart-item img {
+    max-width: 100px;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+  
+  .item-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .item-details h2 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+    color: #555;
+  }
+  
+  .item-details p {
+    margin: 5px 0;
+    color: #777;
+  }
+  
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .quantity-controls p {
+    margin: 0;
+  }
+  
+  .increment-btn, .decrement-btn {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .increment-btn:hover, .decrement-btn:hover {
+    background-color: rgb(202, 202, 202);
+  }
+  
+  .cart-summary {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .cart-summary h2 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .summary-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+  }
+  
+  .summary-details span {
+    font-size: 1.1em;
+    color: #555;
+  }
+  
+  .checkout-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .checkout-btn {
+    background-color: #989898;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1em;
+  }
+  
+  .checkout-btn:hover {
+    background-color: #5a6268;
+  }
+  
+  .empty-cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    text-align: center;
+  }
+  
+  .empty-cart img {
+    max-width: 350px;
+  }
+  
+  .empty-cart p {
+    font-size: 1.5em;
+    color: #777;
+  }

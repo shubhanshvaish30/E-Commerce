@@ -1,0 +1,45 @@
+.explore{
+    margin: 5px 20px;
+    padding: 20px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.explore h1{
+    color: black;
+    font-weight: 150;
+    padding-left: 20px;
+}
+.explore-list{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    margin: 10px 0px;
+    overflow-x: scroll;
+}
+.explore-list::-webkit-scrollbar{
+    display: none;
+}
+.explore-list-item img{
+    width: 11vw;
+    min-width: 80px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+.explore-list-item p{
+    margin-top: 10px;
+    color: black;
+    font-size: max(1.4vw,16px);
+    cursor: pointer;
+}
+.explore-list-item .active{
+    border: 3px solid black;
+    padding: 3px;
+}
+.explore-list-item a{
+    text-decoration: none;
+}

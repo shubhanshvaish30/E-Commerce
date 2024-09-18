@@ -1,0 +1,323 @@
+.product-page {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .product-left {
+    flex: 1;
+  }
+  
+  .product-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .carousel {
+    position: relative;
+  }
+  
+  .carousel-item {
+    display: none;
+    text-align: center;
+  }
+  
+  .carousel-item.active {
+    display: block;
+  }
+  
+  .carousel-item img {
+    max-width: 100%;
+    height: auto;
+    max-height: 460px;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 50%;
+  }
+  
+  .carousel-control-prev {
+    left: 10px;
+  }
+  
+  .carousel-control-next {
+    right: 10px;
+  }
+  .carousel {
+    position: relative;
+}
+
+.main-image {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.main-image img {
+    max-width: 100%;
+    height: auto;
+    max-height: 460px;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.thumbnails {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.thumbnails img {
+    width: 80px; /* Set the size of the thumbnails */
+    height: auto;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+.thumbnails img.active,
+.thumbnails img:hover {
+    transform: scale(1.1); /* Slightly enlarge the thumbnail when active or hovered */
+    border: 2px solid #333; /* Add a border to the active or hovered thumbnail */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+.product-right h1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 200;
+  margin-bottom: 22px;
+  letter-spacing: 1.2px;
+}
+.product-right .description{
+  font-size: 1.2rem;
+  font-weight: 200;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  max-width: 500px;
+}
+.product-right .rating-info{
+  text-align: center;
+  padding: 3px 3px;
+  max-width: 180px;
+  border: 1px solid rgb(171, 171, 171);
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+.product-right .price {
+  font-size: 1.5rem;
+  font-weight: 330;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+.facility-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0px;
+  width: fit-content;
+  gap: 10px;
+}
+
+.facility-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100px; /* Shrink item width to fit content */
+}
+
+.facility-item i {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 8px;
+  background-color: #ffffff; /* Circle background */
+  border-radius: 50%; /* Make it a circle */
+  border: 1px solid black;
+  width: 50px; /* Circle width */
+  height: 50px; /* Circle height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.facility-item p {
+  font-size: 14px;
+  color: #555;
+}
+
+
+.show-buttons {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0px;
+}
+  
+  .quantity-dropdown {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 10px;
+  } 
+  .quantity-dropdown:hover{
+    border: 2px solid black;
+  }
+  .btn-buy {
+    background-color: #989898;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .btn-buy:hover {
+    background-color: #5a6268;
+  }
+  
+  .btn-add-cart {
+    background-color: #989898;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .btn-add-cart:hover {
+    background-color: #5a6268;
+  }
+  
+  
+  /* Reviews section */
+  .col.right {
+    flex: 1;
+    padding: 5px;
+  }
+  
+  .reviews h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .review-form {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  .review-form .rating-input label{
+    margin-bottom: 2px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  } 
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+  }
+  
+  textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .review-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .review-card .review-date {
+    font-size: 0.875rem;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  .review-card .review-user{
+    font-size: 20px;
+    margin-bottom: 8px;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  .review-card .rating{
+    text-align: center;
+    padding: 3px 3px;
+    max-width: 50px;
+    border: 1px solid rgb(171, 171, 171);
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+  }
+  
+  .review-card .review-body p {
+    margin: 0;
+  }
+  
+  .btn-post {
+    background-color: #989898;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .btn-post:hover {
+    background-color: #5a6268;
+  }
+  

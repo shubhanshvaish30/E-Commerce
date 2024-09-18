@@ -1,0 +1,44 @@
+.report-container {
+    max-width: 90vw;
+    height: auto;
+    display: flex;
+    flex-direction: column; /* Change to column to place graph below metrics */
+    padding: 20px 0;
+    justify-content: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    background-color: #f9f9f9;
+}
+
+.report-data {
+    display: flex;
+    min-width: 95%;
+    margin: 0 auto;
+    justify-content: space-around;
+    padding: 20px 15px;
+}
+
+.metric {
+    height: 300px;
+    width: 360px;
+    background-color: #fff;
+    padding: 25px 30px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.metric h3{
+    font-weight: 350;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.orders-graph {
+    margin-top: 40px;
+    padding: 20px;
+    width: 100%;
+}

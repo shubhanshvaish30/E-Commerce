@@ -1,0 +1,34 @@
+.Component2-header{
+    height: 40vw;
+    margin-top:2px;
+    background: url('/shoe.png') no-repeat center;
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+}
+.Component2-contents{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    max-width: 50%;
+    bottom: 30%;
+    left: 58vw;
+    z-index: 1;
+}
+.Component2-contents a {
+    border: none;
+    text-decoration: none;
+    padding: 18px 22px;
+    font-weight: 300;
+    background-color: rgb(35, 33, 33);
+    color: rgb(225, 221, 221);
+    font-size: 22px;
+    letter-spacing: 3px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.Component2-contents a:hover {
+    transform: scale(1.1);
+}

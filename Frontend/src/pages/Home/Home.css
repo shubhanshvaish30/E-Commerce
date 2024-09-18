@@ -1,0 +1,33 @@
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 2px solid rgba(128, 128, 128, 0.7); /* Transparent border with gray color */
+    font-size: 2.5rem;
+    color: rgba(128, 128, 128, 0.7);
+    cursor: pointer;
+    z-index: 2;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.prev-arrow {
+    left: 20px;
+}
+
+.next-arrow {
+    right: 20px;
+}
+
+.arrow:hover {
+    color: rgba(128, 128, 128, 1);
+    border-color: rgba(128, 128, 128, 1);
+    transform: translateY(-50%) scale(1.1);
+}
