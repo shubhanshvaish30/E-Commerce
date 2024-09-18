@@ -48,13 +48,3 @@ app.listen(process.env.PORT,()=>{
     console.log("Server connected at", process.env.PORT)
 })
 
-
-
-
-
-
-
-
-
-
-// mongodb+srv://shubhanshvaish12:707808@cluster0.um3in.mongodb.net/?
